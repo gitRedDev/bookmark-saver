@@ -1,2 +1,2 @@
-# fav-saver
-Save your chrome favorites with a single click 
+# bookmark-saver
+Save your chrome bookmarks with a single click 

@@ -1,0 +1,35 @@
+{
+    "name": "bookmark-saver",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "Save your chrome bookmarks with a single click",
+    "permissions" : [
+        "tabs",
+        "bookmarks"
+    ],
+    "host_permissions": [
+        "https://*/*",
+        "http://*/*"
+    ],      
+    "action": {
+        "default_title": "fav-saver",
+        "default_popup": "popup/popup.html"
+    },
+    "background": {
+        "service_worker": "background_scripts/index.js",
+        "type": "module"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content_scripts/index.js"],
+            "run_at": "document_start"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
