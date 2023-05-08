@@ -13,7 +13,7 @@
     ],      
     "action": {
         "default_title": "fav-saver",
-        "default_popup": "popup/popup.html"
+        "default_popup": "popup/index.html"
     },
     "background": {
         "service_worker": "background_scripts/index.js",
