@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "manifest_version": 3,
     "description": "Save your chrome bookmarks with a single click",
+    "icons": {
+        "128": "icons/icon128.png"
+    },
     "permissions" : [
         "tabs",
         "bookmarks"
