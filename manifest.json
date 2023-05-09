@@ -7,32 +7,10 @@
         "128": "icons/icon128.png"
     },
     "permissions" : [
-        "tabs",
         "bookmarks"
     ],
-    "host_permissions": [
-        "https://*/*",
-        "http://*/*"
-    ],      
     "action": {
         "default_title": "fav-saver",
         "default_popup": "popup/index.html"
-    },
-    "background": {
-        "service_worker": "background_scripts/index.js",
-        "type": "module"
-    },
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": ["content_scripts/index.js"],
-            "run_at": "document_start"
-        }
-    ],
-    "web_accessible_resources": [
-        {
-            "resources": [],
-            "matches": ["<all_urls>"]
-        }
-    ]
+    }
 }
